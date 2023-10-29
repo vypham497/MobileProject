@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/txt_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="AirVisual"
+        android:textColor="@color/black"
+        android:textSize="32dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/txt_appname"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/edit_text_shape"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Search"
+        android:paddingLeft="60dp"
+        android:textSize="13dp">
+    </EditText>
+
+    <TextView>
+        
+    </TextView>
+</RelativeLayout>
