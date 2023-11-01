@@ -20,8 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
-                android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/back"></ImageView>
 
             <ImageView
@@ -38,229 +37,250 @@
         </RelativeLayout>
 
         <TextView
+            android:id="@+id/txt_SignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/poppinssemibold"
             android:text="Sign Up"
             android:textColor="#4081FE"
-            android:textSize="30dp"
-            android:id="@+id/txt_SignUp"
-            android:layout_gravity="center_horizontal">
-        </TextView>
+            android:textSize="24dp"></TextView>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="125dp"
         android:id="@+id/LinearLayout_Sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
-        <TextView
-            android:id="@+id/txt_User_name"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppinsregular"
-            android:text="User name"
-            android:textColor="@color/black"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            tools:ignore="TextSizeCheck"></TextView>
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edt_User_name"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edit_text_shape"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="your name"
-            android:padding="10dp"
-            android:textSize="13dp"
-            tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
+            <TextView
+                android:id="@+id/txt_User_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="User name"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"></TextView>
 
-        <TextView
-            android:id="@+id/txt_Email"
-            android:layout_width="match_parent"
+            <EditText
+                android:id="@+id/edt_User_name"
+                android:layout_width="320dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_shape"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="your name"
+                android:padding="10dp"
+                android:textSize="10dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
+
+            <TextView
+                android:id="@+id/txt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"></TextView>
+
+            <EditText
+                android:id="@+id/edt_Email"
+                android:layout_width="320dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_shape"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="example@gmail.com"
+                android:padding="10dp"
+                android:textSize="10dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:text="Already have an account?"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:id="@+id/txt_toLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:text="  Log in"
+                    android:textColor="#4081FE"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="40dp"></Space>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:text="Email"
-            android:textColor="@color/black"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            tools:ignore="TextSizeCheck"></TextView>
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edt_Email"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edit_text_shape"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="example@gmail.com"
-            android:padding="10dp"
-            android:textSize="13dp"
-            tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
+            <TextView
+                android:id="@+id/txt_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Create a password"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"></TextView>
 
-        <TextView
-            android:id="@+id/txt_Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:text="Create a password"
-            android:textColor="@color/black"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/edt_Password"
+                android:layout_width="320dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_shape"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="must be 8 chacracters"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="10dp"
+                tools:ignore="TouchTargetSizeCheck,TextSizeCheck"></EditText>
 
-        <EditText
-            android:id="@+id/edt_Password"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edit_text_shape"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="must be 8 chacracters"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textSize="13dp"
-            tools:ignore="TouchTargetSizeCheck,TextSizeCheck"></EditText>
+            <TextView
+                android:id="@+id/txt_Confirm_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Confirm"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"></TextView>
 
-        <TextView
-            android:id="@+id/txt_Confirm_Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppinsregular"
-            android:text="Confirm"
-            android:textColor="@color/black"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/edt_Confirm_Password"
+                android:layout_width="320dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_shape"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="repeat password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="10dp"
+                tools:ignore="TouchTargetSizeCheck,TextSizeCheck"></EditText>
 
-        <EditText
-            android:id="@+id/edt_Confirm_Password"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edit_text_shape"
-            android:fontFamily="@font/poppinsregular"
-            android:hint="repeat password"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textSize="13dp"
-            tools:ignore="TouchTargetSizeCheck,TextSizeCheck"></EditText>
+            <Button
+                android:id="@+id/btn_Create_acc_in_sign_up"
+                android:layout_width="320dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/LinearLayout_Sign_up"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Create account"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck">
+
+            </Button>
+        </LinearLayout>
+
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_Create_acc_in_sign_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/LinearLayout_Sign_up"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:width="380dp"
-        android:height="45dp"
-        android:background="@drawable/button_shape"
-        android:fontFamily="@font/poppinsregular"
-        android:text="Create account"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        tools:ignore="TextSizeCheck">
-
-    </Button>
-
-    <TextView
-        android:id="@+id/txt_Or_Register_with"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_Create_acc_in_sign_up"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppinsregular"
-        android:text="Or Register with"
-        android:textSize="13dp"
-        android:textStyle="bold"
-        tools:ignore="TextSizeCheck"></TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_below="@id/txt_Or_Register_with"
-        android:padding="15dp"
-        android:id="@+id/Linear_Or_Register_with">
-
-        <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/buton_shape_black_border"
-            android:src="@drawable/facebook"
-            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
-
-        <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/buton_shape_black_border"
-            android:src="@drawable/google"
-            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
-
-        <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/buton_shape_black_border"
-            android:src="@drawable/apple"
-            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:layout_marginBottom="20dp"
-        android:gravity="center">
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:padding="10dp">
 
         <TextView
+            android:id="@+id/txt_Or_Register_with"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
             android:fontFamily="@font/poppinsregular"
-            android:gravity="center"
-            android:text="Already have an account?"
-            android:textSize="13dp"
+            android:text="Or Login with"
+            android:textSize="10dp"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck"></TextView>
 
-        <TextView
-            android:id="@+id/txt_toLogin"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="  Log in"
-            android:textColor="#4081FE"
-            android:textSize="13dp"
-            android:textStyle="bold"
-            tools:ignore="TextSizeCheck"></TextView>
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buton_shape_black_border"
+                android:src="@drawable/facebook"
+                tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"></Space>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buton_shape_black_border"
+                android:src="@drawable/google"
+                tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"></Space>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buton_shape_black_border"
+                android:src="@drawable/apple"
+                tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+        </LinearLayout>
+
 
     </LinearLayout>
 
