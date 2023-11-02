@@ -24,15 +24,26 @@
                 android:padding="5dp"
                 android:id="@+id/img_LoginBack">
             </ImageView>
-
-            <ImageView
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/vnlanguage"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="20dp">
-            </ImageView>
+                android:layout_marginEnd="2dp"
+                android:id="@+id/ChooseLanguage"
+                >
+
+            </Spinner>
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:src="@drawable/vnlanguage"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                android:id="@+id/language">-->
+            <!--            </ImageView>-->
         </RelativeLayout>
 
 
@@ -40,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinssemibold"
-            android:text="Login"
+            android:text="@string/txt_Login"
             android:textColor="#4081FE"
             android:textSize="30dp"
             android:id="@+id/txt_Login"
@@ -61,7 +72,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="@string/txt_Email"
             android:textColor="@color/black"
             android:fontFamily="@font/poppinsregular"
             android:textSize="13dp"
@@ -86,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:textColor="@color/black"
-            android:text="Password"
+            android:text="@string/txt_Password"
             android:fontFamily="@font/poppinsregular"
             android:textSize="13dp"
             android:textStyle="bold"
@@ -102,7 +113,7 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_shape"
-                android:hint="must be 8 chacracters"
+                android:hint="@string/edt_Password"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textSize="13dp"
@@ -134,7 +145,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/poppinsregular"
-                android:text="Forgot password?"
+                android:text="@string/txt_Forgot_password"
                 android:textSize="13dp"
                 android:textStyle="bold">
 
@@ -154,7 +165,7 @@
         android:height="45dp"
         android:background="@drawable/button_shape"
         android:fontFamily="@font/poppinsregular"
-        android:text="Login"
+        android:text="@string/btn_Login_activity_Login"
         android:textColor="@color/white"
         android:textSize="15dp"
         android:textStyle="bold">
@@ -167,11 +178,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/btn_Login_activity_Login"
-        android:text="Or Login with"
+        android:text="@string/txt_Or_Register_with"
         android:fontFamily="@font/poppinsregular"
         android:textSize="13dp"
         android:textStyle="bold"
-        android:id="@+id/txt_Or_Register_with">
+        android:id="@+id/txt_Or_Login_with">
     </TextView>
 
     <LinearLayout
@@ -179,7 +190,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_below="@id/txt_Or_Register_with"
+        android:layout_below="@id/txt_Or_Login_with"
         android:padding="15dp"
         android:id="@+id/Linear_Or_Register_with">
 
@@ -230,9 +241,10 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="Don't have an account?"
+            android:text="@string/noaccount"
             android:textSize="13dp"
             android:textStyle="bold"
+            android:id="@+id/noaccount"
             ></TextView>
 
         <TextView

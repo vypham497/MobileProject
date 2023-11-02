@@ -14,7 +14,16 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="2dp"
+                android:id="@+id/ChooseLanguage"
+                >
 
+            </Spinner>
             <ImageView
                 android:id="@+id/img_SignUpBack"
                 android:layout_width="wrap_content"
@@ -24,15 +33,15 @@
                 android:padding="5dp"
                 android:src="@drawable/back"></ImageView>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/vnlanguage">
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                android:src="@drawable/vnlanguage">-->
 
-            </ImageView>
+            <!--            </ImageView>-->
 
         </RelativeLayout>
 
@@ -40,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinssemibold"
-            android:text="Sign Up"
+            android:text="@string/txt_SignUp"
             android:textColor="#4081FE"
             android:textSize="30dp"
             android:id="@+id/txt_SignUp"
@@ -61,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsregular"
-            android:text="User name"
+            android:text="@string/txt_User_name"
             android:textColor="@color/black"
             android:textSize="13dp"
             android:textStyle="bold"
@@ -74,7 +83,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/edit_text_shape"
             android:fontFamily="@font/poppinsregular"
-            android:hint="your name"
+            android:hint="@string/edt_User_name"
             android:padding="10dp"
             android:textSize="13dp"
             tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
@@ -109,7 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Create a password"
+            android:text="@string/txt_Password"
             android:textColor="@color/black"
             android:textSize="13dp"
             android:textStyle="bold"
@@ -122,7 +131,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/edit_text_shape"
             android:fontFamily="@font/poppinsregular"
-            android:hint="must be 8 chacracters"
+            android:hint="@string/edt_Password"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="13dp"
@@ -134,7 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Confirm"
+            android:text="@string/txt_Confirm_Password"
             android:textColor="@color/black"
             android:textSize="13dp"
             android:textStyle="bold"
@@ -147,7 +156,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/edit_text_shape"
             android:fontFamily="@font/poppinsregular"
-            android:hint="repeat password"
+            android:hint="@string/edt_Confirm_Password"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="13dp"
@@ -165,7 +174,7 @@
         android:height="45dp"
         android:background="@drawable/button_shape"
         android:fontFamily="@font/poppinsregular"
-        android:text="Create account"
+        android:text="@string/btn_Create_acc_in_sign_up"
         android:textColor="@color/white"
         android:textSize="15dp"
         android:textStyle="bold"
@@ -181,7 +190,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppinsregular"
-        android:text="Or Register with"
+        android:text="@string/txt_Or_Register_with"
         android:textSize="13dp"
         android:textStyle="bold"
         tools:ignore="TextSizeCheck"></TextView>
@@ -243,7 +252,8 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="Already have an account?"
+            android:id="@+id/have_account"
+            android:text="@string/have_account"
             android:textSize="13dp"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck"></TextView>
@@ -255,7 +265,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="  Log in"
+            android:text="@string/txt_Login"
             android:textColor="#4081FE"
             android:textSize="13dp"
             android:textStyle="bold"
