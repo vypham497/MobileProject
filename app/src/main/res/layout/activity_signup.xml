@@ -14,35 +14,24 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="2dp"
-                android:id="@+id/ChooseLanguage"
-                >
 
-            </Spinner>
             <ImageView
                 android:id="@+id/img_SignUpBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:padding="5dp"
                 android:src="@drawable/back"></ImageView>
-
-            <!--            <ImageView-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_alignParentEnd="true"-->
-            <!--                android:layout_centerVertical="true"-->
-            <!--                android:layout_marginEnd="20dp"-->
-            <!--                android:src="@drawable/vnlanguage">-->
-
-            <!--            </ImageView>-->
-
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:id="@+id/ChooseLanguage">
+            </Spinner>
         </RelativeLayout>
 
         <TextView
@@ -263,6 +252,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
             android:text="@string/txt_Login"

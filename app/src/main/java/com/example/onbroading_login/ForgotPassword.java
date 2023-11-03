@@ -34,8 +34,8 @@ public class ForgotPassword extends AppCompatActivity {
 //        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 //        spinner.setAdapter(adapter);
         List<SpinnerItem> items = new ArrayList<>();
-        items.add(new SpinnerItem(R.drawable.unitedkingdomlanguage, "English"));
-        items.add(new SpinnerItem(R.drawable.vnlanguage, "VietNam"));
+        items.add(new SpinnerItem(R.drawable.englishlanguage, "English"));
+        items.add(new SpinnerItem(R.drawable.vietnamlanguage, "VietNam"));
         items.add(new SpinnerItem(R.drawable.francelanguage, "France"));
         items.add(new SpinnerItem(R.drawable.thailandlanguage, "ThaiLand"));
         CustomSpinnerAdapter adapter = new CustomSpinnerAdapter(this, items);

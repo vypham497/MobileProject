@@ -22,14 +22,15 @@
                 android:src="@drawable/back"
                 android:id="@+id/img_LoginBack">
             </ImageView>
-            <ImageView
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/vnlanguage"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="20dp">
-            </ImageView>
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/ChooseLanguage">
+            </Spinner>
         </RelativeLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -242,6 +243,7 @@
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
             android:text="  Sign Up"
+            android:layout_marginLeft="5dp"
             android:textColor="#4081FE"
             android:textSize="10dp"
             android:textStyle="bold"></TextView>

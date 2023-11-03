@@ -19,7 +19,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:src="@drawable/back"
                 android:padding="5dp"
                 android:id="@+id/img_LoginBack">
@@ -28,22 +28,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:layout_gravity="end"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="2dp"
-                android:id="@+id/ChooseLanguage"
-                >
-
+                android:id="@+id/ChooseLanguage">
             </Spinner>
-
-            <!--            <ImageView-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_alignParentEnd="true"-->
-            <!--                android:src="@drawable/vnlanguage"-->
-            <!--                android:layout_centerVertical="true"-->
-            <!--                android:layout_marginEnd="20dp"-->
-            <!--                android:id="@+id/language">-->
-            <!--            </ImageView>-->
         </RelativeLayout>
 
 
@@ -252,6 +242,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
             android:text="  Sign Up"

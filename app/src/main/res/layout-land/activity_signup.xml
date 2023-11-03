@@ -23,16 +23,15 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/back"></ImageView>
 
-            <ImageView
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/img_SignUpBack"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/vnlanguage">
-
-            </ImageView>
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:id="@+id/ChooseLanguage">
+            </Spinner>
 
         </RelativeLayout>
 
@@ -51,7 +50,7 @@
         android:id="@+id/LinearLayout_Sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="95dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:gravity="center_horizontal"
@@ -135,7 +134,8 @@
                     android:layout_marginTop="15dp"
                     android:fontFamily="@font/poppinsregular"
                     android:gravity="center"
-                    android:text="  Log in"
+                    android:layout_marginLeft="5dp"
+                    android:text="Log in"
                     android:textColor="#4081FE"
                     android:textSize="10dp"
                     android:textStyle="bold"
@@ -251,7 +251,7 @@
 
             <ImageButton
                 android:layout_width="100dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/buton_shape_black_border"
                 android:src="@drawable/facebook"
                 tools:ignore="SpeakableTextPresentCheck"></ImageButton>
@@ -263,7 +263,7 @@
 
             <ImageButton
                 android:layout_width="100dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/buton_shape_black_border"
                 android:src="@drawable/google"
                 tools:ignore="SpeakableTextPresentCheck"></ImageButton>
@@ -275,7 +275,7 @@
 
             <ImageButton
                 android:layout_width="100dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:background="@drawable/buton_shape_black_border"
                 android:src="@drawable/apple"
                 tools:ignore="SpeakableTextPresentCheck"></ImageButton>
