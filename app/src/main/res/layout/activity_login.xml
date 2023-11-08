@@ -41,10 +41,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinssemibold"
-            android:text="@string/txt_Login"
+            android:text="@string/txt_toLogin"
             android:textColor="#4081FE"
             android:textSize="30dp"
-            android:id="@+id/txt_Login"
+            android:id="@+id/txt_toLogin"
             android:layout_gravity="center_horizontal">
         </TextView>
     </LinearLayout>
@@ -79,7 +79,7 @@
             android:padding="10dp"
             android:textSize="13dp"
             android:fontFamily="@font/poppinsregular"
-            android:id="@+id/edt_Email">
+            android:id="@+id/edt_loginEmail">
         </EditText>
 
         <TextView
@@ -103,18 +103,19 @@
                 android:layout_height="45dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_shape"
-                android:hint="@string/edt_Password"
+                android:hint="@string/edt_loginPassword"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textSize="13dp"
                 android:fontFamily="@font/poppinsregular"
-                android:id="@+id/edt_Password">
+                android:id="@+id/edt_loginPassword">
             </EditText>
 
             <ImageView
+                android:id="@+id/img_passwordVisibility"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/edt_Password"
+                android:layout_alignEnd="@id/edt_loginPassword"
                 android:src="@drawable/invisible"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="20dp">
@@ -135,7 +136,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/poppinsregular"
-                android:text="@string/txt_Forgot_password"
+                android:text="@string/txt_toForgotPassword"
                 android:textSize="13dp"
                 android:textStyle="bold">
 
@@ -145,17 +146,17 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_Login_activity_Login"
+        android:id="@+id/btn_loginLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/LinearLayout_Sign_up"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-10dp"
-        android:width="410dp"
+        android:width="250dp"
         android:height="45dp"
         android:background="@drawable/button_shape"
         android:fontFamily="@font/poppinsregular"
-        android:text="@string/btn_Login_activity_Login"
+        android:text="@string/btn_loginLogIn"
         android:textColor="@color/white"
         android:textSize="15dp"
         android:textStyle="bold">
@@ -167,8 +168,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/btn_Login_activity_Login"
-        android:text="@string/txt_Or_Register_with"
+        android:layout_below="@+id/btn_loginLogIn"
+        android:text="@string/txt_Or_Login_with"
         android:fontFamily="@font/poppinsregular"
         android:textSize="13dp"
         android:textStyle="bold"
@@ -245,7 +246,7 @@
             android:layout_marginLeft="5dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="  Sign Up"
+            android:text="@string/txt_toSignUp"
             android:textColor="#4081FE"
             android:textSize="13dp"
             android:textStyle="bold"></TextView>

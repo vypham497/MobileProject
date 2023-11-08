@@ -3,23 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
             android:padding="10dp"
-            android:layout_gravity="end"
             android:id="@+id/ChooseLanguage">
         </Spinner>
-    </LinearLayout>
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/img_Main_Lg"
@@ -28,57 +27,56 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
         android:src="@drawable/mainlg"></ImageView>
-
     <TextView
-        android:id="@+id/txt_App_name"
+        android:id="@+id/txt_Slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/img_Main_Lg"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="AirVisual"
-        android:textColor="@color/white"
-        android:textSize="34dp">
-    </TextView>
+        android:fontFamily="@font/poppinsregular"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="15dp"></TextView>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:orientation="vertical"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="50dp"
     android:gravity="center">
-    <Button
-        android:id="@+id/btn_Create_acc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_Login"
-        android:width="380dp"
-        android:height="45dp"
-        android:background="@drawable/buton_shape_black_border"
-        android:fontFamily="@font/poppinsregular"
-        android:text="Create account"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="bold">
-    </Button>
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="15dp" />
 
     <Button
-        android:id="@+id/btn_Login"
+        android:id="@+id/btn_onboardingLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="380dp"
+        android:layout_marginTop="202dp"
+        android:width="300dp"
         android:height="45dp"
         android:background="@drawable/button_shape"
         android:fontFamily="@font/poppinsregular"
-        android:text="Login"
+        android:text="@string/btn_onboardingLogin"
         android:textColor="@color/white"
         android:textSize="15dp"
         android:textStyle="bold">
-
+    </Button>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+    <Button
+        android:id="@+id/btn_onboardingCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_onboardingLogin"
+        android:width="300dp"
+        android:height="45dp"
+        android:background="@drawable/buton_shape_black_border"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/btn_onboardingCreateAccount"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold">
     </Button>
 </LinearLayout>
 

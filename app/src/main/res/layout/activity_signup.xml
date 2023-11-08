@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,31 +69,31 @@
             tools:ignore="TextSizeCheck"></TextView>
 
         <EditText
-            android:id="@+id/edt_User_name"
+            android:id="@+id/edt_signupUserName"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/edit_text_shape"
             android:fontFamily="@font/poppinsregular"
-            android:hint="@string/edt_User_name"
+            android:hint="@string/edt_signupUserName"
             android:padding="10dp"
             android:textSize="13dp"
             tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
 
         <TextView
-            android:id="@+id/txt_Email"
+            android:id="@+id/txt_email_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Email"
+            android:text="@tring/txt_email_signup"
             android:textColor="@color/black"
             android:textSize="13dp"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck"></TextView>
 
         <EditText
-            android:id="@+id/edt_Email"
+            android:id="@+id/edt_signupEmail"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
@@ -114,13 +117,13 @@
             tools:ignore="TextSizeCheck"></TextView>
 
         <EditText
-            android:id="@+id/edt_Password"
+            android:id="@+id/edt_signupPassword"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/edit_text_shape"
             android:fontFamily="@font/poppinsregular"
-            android:hint="@string/edt_Password"
+            android:hint="@string/edt_loginPassword"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="13dp"
@@ -139,13 +142,13 @@
             tools:ignore="TextSizeCheck"></TextView>
 
         <EditText
-            android:id="@+id/edt_Confirm_Password"
+            android:id="@+id/edt_sigupConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/edit_text_shape"
             android:fontFamily="@font/poppinsregular"
-            android:hint="@string/edt_Confirm_Password"
+            android:hint="@string/edt_sigupConfirmPassword"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="13dp"
@@ -153,13 +156,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_Create_acc_in_sign_up"
+        android:id="@+id/btn_signupCreateAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/LinearLayout_Sign_up"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:width="410dp"
+        android:width="250dp"
         android:height="45dp"
         android:background="@drawable/button_shape"
         android:fontFamily="@font/poppinsregular"
@@ -175,7 +178,7 @@
         android:id="@+id/txt_Or_Register_with"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_Create_acc_in_sign_up"
+        android:layout_below="@id/btn_signupCreateAccount"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppinsregular"
@@ -255,7 +258,7 @@
             android:layout_marginLeft="5dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="@string/txt_Login"
+            android:text="@string/txt_toLogin"
             android:textColor="#4081FE"
             android:textSize="13dp"
             android:textStyle="bold"

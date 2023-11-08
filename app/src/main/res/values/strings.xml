@@ -1,26 +1,31 @@
 <resources>
     <string name="app_name">Onbroading_Login</string>
+    <string name="btn_onboardingLogin">Login</string>
     <string name="txt_Login">Login</string>
-    <string name="txt_Email" translatable="false">Email</string>
+    <string name="txt_toLogin">Login</string>
+    <string name="txt_Email" >Email or Username</string>
+    <string name="txt_email_signup" translatable="false">Email</string>
     <string name="txt_Password">Password</string>
-    <string name="edt_Password">must be 8 chacracters</string>
+    <string name="edt_loginPassword">must be 8 chacracters</string>
     <string name="txt_toForgotPassword">Forgot password?</string>
     <string name="txt_Or_Login_with">Or Login with</string>
     <string name="txt_Or_Register_with">Or Register with</string>
     <string name="noaccount">Do not have an account? </string>
-    <string name="txt_toSignUp">  Sign Up</string>
+    <string name="txt_SignUp">  Sign Up</string>
     <string name="txt_Forgot_password">Forgot password</string>
     <string name="btn_Send_mail">Send mail</string>
-    <string name="txt_SignUp">Sign up</string>
+    <string name="btn_loginLogIn">Login</string>
+    <string name="txt_toSignUp"> Sign up</string>
     <string name="txt_User_name">User name</string>
-    <string name="edt_User_name">your name</string>
+    <string name="edt_signupUserName">your name</string>
     <string name="txt_Password_create">Create a password</string>
     <string name="txt_Confirm_Password">Confirm</string>
-    <string name="edt_Confirm_Password">repeat password</string>
+    <string name="edt_sigupConfirmPassword">repeat password</string>
     <string name="btn_Login">Login</string>
     <string name="have_account">Already have an account? </string>
-    <string name="btn_Create_acc">Create an account</string>
+    <string name="btn_signupCreateAccount">Create an account</string>
     <string name="btn_Create_acc_in_sign_up">Create account</string>
+    <string name="btn_onboardingCreateAccount">Create an account</string>
     <string name="btn_Login_activity_Login">LOGIN</string>
     <string-array name="spinner_item">
         <item id="en">English</item>

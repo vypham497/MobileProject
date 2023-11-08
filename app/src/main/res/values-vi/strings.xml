@@ -2,23 +2,30 @@
 <resources>
     <string name="app_name">Onbroading_Login</string>
     <string name="txt_Login">Đăng nhập</string>
+
+    <string name="txt_toLogin">Đăng nhập</string>
+    <string name="btn_loginLogIn">Đăng nhập</string>
+    <string name="btn_onboardingLogin">Đăng nhập</string>
     <string name="txt_Password">Mật khẩu</string>
-    <string name="edt_Password">mật khẩu bắt buộc trên 8 kí tự</string>
+    <string name="edt_loginPassword">mật khẩu bắt buộc trên 8 kí tự</string>
     <string name="txt_toForgotPassword">Quên mật khẩu?</string>
     <string name="noaccount">Bạn chưa có tài khoản?</string>
-    <string name="txt_toSignUp">"  Đăng kí"</string>
+    <string name="txt_SignUp">"  Đăng kí"</string>
+    <string name="txt_toSignUp"> Đăng kí</string>
     <string name="txt_Forgot_password">Quên mật khẩu</string>
     <string name="btn_Send_mail">Gửi</string>
-    <string name="txt_SignUp">Đăng kí</string>
+    <string name="txt_Email">Email hoặc Tên nguời dùng</string>
+    <string name="txt_email_signup">Email</string>
     <string name="txt_User_name">Tên người dùng</string>
-    <string name="edt_User_name">nhập tên người dùng của bạn</string>
+    <string name="edt_signupUserName">nhập tên người dùng của bạn</string>
     <string name="txt_Password_create">Mật khẩu</string>
     <string name="txt_Confirm_Password">Xác nhận mật khẩu</string>
-    <string name="edt_Confirm_Password">mật khẩu</string>
+    <string name="edt_sigupConfirmPassword">mật khẩu</string>
     <string name="btn_Login">Đăng nhập</string>
     <string name="have_account">Bạn đã có tài khoản?</string>
-    <string name="btn_Create_acc">Tạo tài khoản</string>
+    <string name="btn_signupCreateAccount">Tạo tài khoản</string>
     <string name="btn_Create_acc_in_sign_up">Tạo tài khoản</string>
+    <string name="btn_onboardingCreateAccount">Tạo tài khoản</string>
     <string name="txt_Or_Register_with">Đăng kí với</string>
     <string name="txt_Or_Login_with">Đăng nhập với</string>
     <string name="btn_Login_activity_Login">Đăng nhập</string>

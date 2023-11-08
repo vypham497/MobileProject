@@ -2,24 +2,30 @@
 <resources>
     <string name="app_name">Onbroading_Login</string>
     <string name="txt_Login">Se connecter</string>
+    <string name="txt_toLogin">Se connecter</string>
+    <string name="btn_loginLogIn">Se connecter</string>
+    <string name="btn_onboardingLogin">Se connecter</string>
     <string name="txt_Password">Mot de passe</string>
-    <string name="edt_Password">doit contenir 8 caractères</string>
+    <string name="edt_loginPassword">doit contenir 8 caractères</string>
     <string name="txt_toForgotPassword">Mot de passe oublié?</string>
     <string name="txt_Or_Login_with">Ou connectez-vous avec</string>
     <string name="txt_Or_Register_with">Ou inscrivez-vous avec</string>
     <string name="noaccount">Vous n\'avez pas de compte?</string>
-    <string name="txt_toSignUp">S\'inscrire</string>
+    <string name="txt_Email">Email Nom d\'utilisateur</string>
+    <string name="txt_email_signup">Email</string>
     <string name="txt_Forgot_password">Mot de passe oublié</string>
     <string name="btn_Send_mail">Envoyer un mail</string>
     <string name="txt_SignUp">S\'inscrire</string>
+    <string name="txt_toSignUp"> S\'inscrire</string>
     <string name="txt_User_name">Nom d\'utilisateur</string>
-    <string name="edt_User_name">votre nom</string>
+    <string name="edt_signupUserName">votre nom</string>
     <string name="txt_Password_create">Créer un mot de passe</string>
     <string name="txt_Confirm_Password">Confirmer</string>
-    <string name="edt_Confirm_Password">Répéter le mot de passe</string>
+    <string name="edt_sigupConfirmPassword">Répéter le mot de passe</string>
     <string name="btn_Login">Se connecter</string>
     <string name="have_account">Vous avez déjà un compte?</string>
-    <string name="btn_Create_acc">Créer un compte</string>
+    <string name="btn_signupCreateAccount">Créer un compte</string>
+    <string name="btn_onboardingCreateAccount">Créer un compte</string>
     <string name="btn_Create_acc_in_sign_up">Créer un compte</string>
     <string name="btn_Login_activity_Login">Se connecter</string>
 </resources>

@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/poppinssemibold"
-            android:text="Sign Up"
+            android:text="@string/txt_SignUp"
             android:textColor="#4081FE"
             android:textSize="24dp"></TextView>
     </LinearLayout>
@@ -67,20 +70,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppinsregular"
-                android:text="User name"
+                android:text="@string/txt_User_name"
                 android:textColor="@color/black"
                 android:textSize="10dp"
                 android:textStyle="bold"
                 tools:ignore="TextSizeCheck"></TextView>
 
             <EditText
-                android:id="@+id/edt_User_name"
+                android:id="@+id/edt_signupUserName"
                 android:layout_width="320dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_shape"
                 android:fontFamily="@font/poppinsregular"
-                android:hint="your name"
+                android:hint="@string/edt_signupUserName"
                 android:padding="10dp"
                 android:textSize="10dp"
                 tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
@@ -98,7 +101,7 @@
                 tools:ignore="TextSizeCheck"></TextView>
 
             <EditText
-                android:id="@+id/edt_Email"
+                android:id="@+id/edt_signupEmail"
                 android:layout_width="320dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="5dp"
@@ -122,7 +125,7 @@
                     android:layout_marginTop="15dp"
                     android:fontFamily="@font/poppinsregular"
                     android:gravity="center"
-                    android:text="Already have an account?"
+                    android:text="@string/have_account"
                     android:textSize="10dp"
                     android:textStyle="bold"
                     tools:ignore="TextSizeCheck"></TextView>
@@ -135,7 +138,7 @@
                     android:fontFamily="@font/poppinsregular"
                     android:gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:text="Log in"
+                    android:text="@string/txt_toLogin"
                     android:textColor="#4081FE"
                     android:textSize="10dp"
                     android:textStyle="bold"
@@ -165,7 +168,7 @@
                 tools:ignore="TextSizeCheck"></TextView>
 
             <EditText
-                android:id="@+id/edt_Password"
+                android:id="@+id/edt_signupPassword"
                 android:layout_width="320dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="5dp"
@@ -190,7 +193,7 @@
                 tools:ignore="TextSizeCheck"></TextView>
 
             <EditText
-                android:id="@+id/edt_Confirm_Password"
+                android:id="@+id/edt_sigupConfirmPassword"
                 android:layout_width="320dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="5dp"
@@ -203,7 +206,7 @@
                 tools:ignore="TouchTargetSizeCheck,TextSizeCheck"></EditText>
 
             <Button
-                android:id="@+id/btn_Create_acc_in_sign_up"
+                android:id="@+id/btn_signupCreateAccount"
                 android:layout_width="320dp"
                 android:layout_height="35dp"
                 android:layout_below="@id/LinearLayout_Sign_up"
@@ -238,7 +241,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Or Login with"
+            android:text="@string/txt_Or_Register_with"
             android:textSize="10dp"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck"></TextView>

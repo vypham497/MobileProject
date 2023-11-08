@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinssemibold"
-            android:text="Login"
+            android:text="@string/txt_Login"
             android:textColor="#4081FE"
             android:textSize="24dp"
             android:id="@+id/txt_Login"
@@ -75,7 +75,7 @@
             android:padding="10dp"
             android:textSize="10dp"
             android:fontFamily="@font/poppinsregular"
-            android:id="@+id/edt_Email">
+            android:id="@+id/edt_loginEmail">
         </EditText>
 
         <TextView
@@ -99,18 +99,19 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/edit_text_shape"
-                android:hint="must be 8 chacracters"
+                android:hint="@string/edt_loginPassword"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textSize="10dp"
                 android:fontFamily="@font/poppinsregular"
-                android:id="@+id/edt_Password">
+                android:id="@+id/edt_loginPassword">
             </EditText>
 
             <ImageView
+                android:id="@+id/img_passwordVisibility"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/edt_Password"
+                android:layout_alignEnd="@id/edt_loginPassword"
                 android:src="@drawable/invisible"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="20dp">
@@ -131,15 +132,15 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/poppinsregular"
-                android:text="Forgot password?"
+                android:text="@string/txt_toForgotPassword"
                 android:textSize="10dp"
                 android:textStyle="bold">
 
             </TextView>
         </RelativeLayout>
         <Button
-            android:id="@+id/btn_Login_activity_Login"
-            android:layout_width="400dp"
+            android:id="@+id/btn_loginLogIn"
+            android:layout_width="350dp"
             android:layout_height="35dp"
             android:layout_below="@id/LinearLayout_Sign_up"
             android:layout_centerHorizontal="true"
@@ -153,8 +154,6 @@
         </Button>
     </LinearLayout>
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -166,12 +165,12 @@
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/txt_Or_Register_with"
+            android:id="@+id/txt_Or_Login_with"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/poppinsregular"
-            android:text="Or Register with"
+            android:text="@string/txt_Or_Login_with"
             android:textSize="10dp"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck"></TextView>
@@ -230,9 +229,10 @@
             android:layout_marginTop="13dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="Don't have an account?"
+            android:text="@string/noaccount"
             android:textSize="10dp"
             android:textStyle="bold"
+            android:id="@+id/noaccount"
             ></TextView>
 
         <TextView
@@ -242,7 +242,7 @@
             android:layout_marginTop="13dp"
             android:fontFamily="@font/poppinsregular"
             android:gravity="center"
-            android:text="  Sign Up"
+            android:text="@string/txt_toSignUp"
             android:layout_marginLeft="5dp"
             android:textColor="#4081FE"
             android:textSize="10dp"

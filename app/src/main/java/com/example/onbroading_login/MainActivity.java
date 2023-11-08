@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button goLoginPage = findViewById(R.id.btn_Login);
+        Button goLoginPage = findViewById(R.id.btn_onboardingLogin);
         goLoginPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button goSignUpPage = findViewById(R.id.btn_Create_acc);
+        Button goSignUpPage = findViewById(R.id.btn_onboardingCreateAccount);
         goSignUpPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
